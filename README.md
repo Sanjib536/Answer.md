@@ -4,6 +4,10 @@ Answer: The relationship between the Product" and "Product_Category" entities fr
 This relationship is often represented in a database using a junction table. The junction table will have two columns, one for each of the entities in the relationship. In this case, the junction table would have two columns: "product_id" and "product_category_id".
 Each row in the junction table would represent a relationship between a product and a category. For example, a row in the junction table might have the values "1" and "2" in the "product_id" and "product_category_id" columns, respectively. This would represent the relationship between the product with the ID of "1" and the category with the ID of "2".
 Many-to-many relationships can be more complex to model than other types of relationships, but they are very common in databases.
+
+
+----------------&---------------------&---------------------------&----
+
 2.How could you ensure that each product in the "Product" table has a valid category assigned to it?
 Answer:- There are a few ways to ensure that each product in the "Product" table has a valid category assigned to it.
 One way is to use a foreign key constraint. A foreign key constraint is a database constraint that ensures that the value of a column in one table references a valid value in another table. In this case, you could create a foreign key constraint on the product_category_id column in the Product table that references the id column in the Category table. This would ensure that every product in the Product table has a valid category assigned to it.
